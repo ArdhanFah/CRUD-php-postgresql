@@ -1,7 +1,7 @@
 <?php 
 include("config.php");
 $nis = $_GET['nis'];
-$query=$connects->query("SELECT * FROM tbl_data WHERE nis='$nis'");
+$query=$connect->query("SELECT * FROM tbl_test WHERE nis='$nis'");
 $query->execute();
 $data = $query->fetch();
 ?>
